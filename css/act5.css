@@ -1,0 +1,202 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Palatino', serif;
+            background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+            padding: 20px;
+            line-height: 1.68;
+        }
+        
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #fefefe;
+            padding: 44px;
+            border-radius: 17px;
+            box-shadow: 0 24px 75px rgba(0,0,0,0.32);
+        }
+        
+        h1 {
+            color: #4a5568;
+            text-align: center;
+            margin-bottom: 12px;
+            font-size: 2.75em;
+            font-weight: 600;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            max-width: 250px;
+            display: block;
+            margin: 25px auto 35px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .recipe-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+        }
+    
+        .step-image {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .recipe-meta {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 34px;
+            font-size: 1.09em;
+        }
+        
+        h2 {
+            color: #2d3748;
+            border-bottom: 4px solid #48bb78;
+            padding-bottom: 12px;
+            margin: 34px 0 20px 0;
+            font-size: 1.92em;
+        }
+        
+        .ingredients {
+            background: linear-gradient(135deg, #f7fafc 0%, #e6fffa 100%);
+            padding: 27px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 2px solid #38b2ac;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul li {
+            padding: 10px 0;
+            padding-left: 42px;
+            position: relative;
+            font-size: 1.07em;
+        }
+        
+        ul li:before {
+            content: "🍄";
+            position: absolute;
+            left: 10px;
+            font-size: 1.3em;
+        }
+        
+        ol {
+            counter-reset: recipe-step;
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ol li {
+            counter-increment: recipe-step;
+            padding: 20px;
+            margin: 15px 0;
+            background: linear-gradient(90deg, #fef5e7 0%, #fdebd0 100%);
+            border-left: 5px solid #d68910;
+            position: relative;
+            padding-left: 62px;
+            border-radius: 8px;
+        }
+        
+        ol li:before {
+            content: counter(recipe-step);
+            position: absolute;
+            left: 18px;
+            top: 20px;
+            background: #d68910;
+            color: white;
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.16em;
+        }
+        
+        dl {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 27px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 2px solid #f59e0b;
+        }
+        
+        dt {
+            font-weight: bold;
+            color: #b45309;
+            margin-top: 18px;
+            font-size: 1.16em;
+        }
+        
+        dt:first-child {
+            margin-top: 0;
+        }
+        
+        dd {
+            margin-left: 25px;
+            margin-top: 9px;
+            color: #3f3f3f;
+            line-height: 1.75;
+        }
+        
+        .source {
+            margin-top: 37px;
+            padding: 20px;
+            background: #ede9fe;
+            border-left: 5px solid #8b5cf6;
+            border-radius: 7px;
+        }
+        
+        .source strong {
+            color: #6d28d9;
+            font-size: 1.06em;
+        }
+        
+        .source a {
+            color: #5b21b6;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        .source a:hover {
+            text-decoration: underline;
+            color: #7c3aed;
+        }
+        
+        strong {
+            color: #dc2626;
+        }
+        
+        em {
+            color: #059669;
+            font-style: italic;
+        }
+        
+        .tip {
+            background: #dbeafe;
+            padding: 16px;
+            border-radius: 9px;
+            margin: 16px 0;
+            border-left: 4px solid #3b82f6;
+            font-size: 0.98em;
+        }
+        
+        .tip strong {
+            color: #1e40af;
+        }
+    
